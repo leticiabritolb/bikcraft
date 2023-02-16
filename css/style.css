@@ -14,8 +14,9 @@
 
 @import "bibicletas/bicicletaslista.css";
 
-@import "seguros/seguros.css"
+@import "seguros/seguros.css";
 
+@import "termos/termos.css";
 
-
+@import "global/footer.css"
  
