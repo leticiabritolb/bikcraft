@@ -4,7 +4,7 @@ body {
     height: 2000px;
 
     color: var(--c11);}
-h1,h2, h3, h4 ul, p, blockquote {
+h1,h2, h3, h4 ul, p, blockquote,dd {
     margin: 0px;}
 ul {
     margin: 0px;
@@ -18,4 +18,5 @@ img {
     display: block;}
 
 img[src$=".jpeg"] {border-radius: 4px;}
+
 
