@@ -1,0 +1,86 @@
+.container {
+    box-sizing: border-box;
+    margin-left: 200px;
+    max-width: 1200px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;}
+.botao {
+    display: inline-block;
+    padding: 16px 32px;
+    background: linear-gradient(#FFBF00, #F2A50C);
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    color: var(--p5);
+    font: 600 1.125rem/1.5 "Poppins", sans-serif;
+    max-width: max-content;}
+    
+.botao:hover{
+    background: linear-gradient(#FFBF00, #e59317);}
+
+.botao.secundario {
+    background: var(--c10);
+    color: var(--c2);}
+.botao.secundario:hover {
+        background: var(--c9);}
+
+.botao.seta {
+    display: flex;
+    align-items: center;
+}
+.botao.seta::after {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 10px;
+    margin-left: 12px;
+    background-image: url(../../img/icones/seta.svg);}
+
+.botao.seta:hover::after {
+    transform: translateX(4px);
+    transition: .3s;}
+
+@media (max-width: 600px) {
+    .botao {
+        padding: 12px 16px;
+        font-size: 16px;}}
+
+.img {
+    border-radius: 5px;}
+
+.link {
+    display: inline-block;
+    color: var(--p1);
+    font: 500 1.5rem/1.5 "Poppins", sans-serif;
+    text-transform: uppercase;}
+.link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: currentColor;}
+.link:hover {
+    color: var(--w);}
+
+.titulo-bg {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: var(--c11);}
+
+.titulo p {
+    margin-bottom: 4px;}
+
+@media (max-width: 800px) {
+    .titulo-bg {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        }
+    .titulo {
+        padding-top: 0px;
+        padding-bottom: 0px;}
+    .titulo p {
+        font-size: 1rem;
+        text-transform: lowercase;
+        font-weight: 400;}}
+
