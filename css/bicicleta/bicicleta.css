@@ -1,0 +1,104 @@
+.modelo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;}
+
+#modelo .titulo p {
+    text-transform: uppercase;}
+
+.modelo-imagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;}
+
+.modelo-imagens img {
+    flex: 1;
+    min-width: 200px;
+    border-radius: 5px;}
+
+.modelo-imagens img:first-child {
+    min-width: 100%;}
+
+.modelo-conteudo > p {
+    margin-bottom: 32px;}
+
+.modelo-comprar {
+    display: grid;
+    grid-template-columns: max-content auto;
+    align-items: center;
+    justify-items: start;
+    gap: 8px 12px}
+
+.modelo-comprar a {
+    grid-row: span 2;}
+
+.modelo-comprar span {
+    display: flex;
+    align-items: center;
+    background: var(--c12);
+    padding: 4px 8px;
+    border-radius: 5px;
+    gap: 8px;}
+
+.modelo-conteudo h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.015em;
+    margin-bottom: 12px;}
+
+.modelo-conteudo div + h2 {
+    padding-top: 40px;}
+.modelo-informacoes, 
+.modelo-ficha {
+    background: var(--c12);
+    padding: 32px;
+    border-radius: 5px;}
+
+.modelo-informacoes {
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;}
+
+.modelo-informacoes img{
+    width: 24px;
+    margin-bottom: 8px;}
+
+.modelo-informacoes h3{
+    margin-bottom: 8px;}
+
+.modelo-ficha li {
+    padding: 4px 0px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--c11);}
+
+.modelo-ficha li:last-child {
+    border-bottom: none;}
+
+.modelo-ficha span {
+    color: var(--c6);}
+
+@media (max-width:800px) {
+    .modelo {
+        grid-template-columns: 1fr;
+        padding-top: 40px;
+        padding-bottom: 40px;}
+    .modelo-imagens {
+        grid-row: 2;}}
+
+.bicicletas-lista ul{
+    display: flex;
+    gap: 40px;
+    padding: 0px 0px 20px 0px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: auto;}
+
+.bicicletas-lista img{
+ border-radius: 5px;}
+.titulo {
+    margin-top: 60px;}

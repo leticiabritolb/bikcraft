@@ -8,7 +8,7 @@ font-size: 1.5rem;
 letter-spacing: 1.5;
 font-family: "Roboto", sans-serif;
 text-transform: uppercase;}
-
+.font-2-xl {font: 500 2rem/1.5 "Roboto", sans-serif;}
 
 .font-1-xs {font: 400 .75rem/1.35 "Poppins", sans-serif;}
 .font-1-s {font: 400 1rem/1.5 "Poppins", sans-serif;}
@@ -26,7 +26,6 @@ text-transform: uppercase;}
 
 @media (max-width: 800px)
     {.font-1-xxl {font-size: 2rem;}
-
     .font-1-xl, 
     .font-2-xl 
         {font-size: 1.5rem;}
