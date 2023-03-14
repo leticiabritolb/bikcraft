@@ -23,15 +23,12 @@
     width: 0%;
     background: var(--w);
     margin-top: 4px;
+    transition: 0.3s;
     position: absolute;}
-.header-menu a:hover:after {
-    content: "";
-    display: block;
-    height: 2px;
-    width: 100%;
-    background: var(--w);
-    margin-top: 4px;
-    transition: 0.3s;}
+.header-menu a:hover:after,
+.header-menu a.ativo::after
+ {
+    width: 100%;}
 
 @media (max-width: 800px) {
     .header-menu {
