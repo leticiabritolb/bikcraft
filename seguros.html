@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
+    <script>document.documentElement.classList.ass("js");</script>
 </head>
 <body id="seguros">
     <header class="header-bg">
@@ -46,7 +47,7 @@
                 <h1 class="font-1-xxl w">você seguro<span class="p1">.</span></h1>
             </div>
         </div>
-                <div class="seguros container">
+                <div class="seguros container fadeInLeft" data-anime="200" >
                         <div class="seguros-item">
                             <h3 class="font-1-xl c5">PRATA</h3>
                             <span class="font-1-xl w">R$199 <span class="font-1-xs c3">mensal</span></span>
@@ -58,7 +59,7 @@
                             </ul>
                             <a class="botao secundario" href="./orcamento.html?tipo=seguro&produto=prata">Inscreva-se</a>
                         </div>
-                        <div class="seguros-item">
+                        <div class="seguros-item fadeInRight" data-anime="400">
                             <h3 class="font-1-xl p1">OURO</h3>
                             <span class="font-1-xl w">R$299 <span class="font-1-xs c3">mensal</span></span>
                             <ul class="w font-2-m">
@@ -117,28 +118,30 @@
         <h1 class="font-1-xxl c11">perguntas frequentes<span class="p1">.</span></h1>
                 <dl class="perguntas-lista">
                     <div class="perguntas-item">
-                        <dt class="font-1-m-b c11">Qual forma de pagamento vocês aceitam?</dt>
-                        <dd class="c9 font-2-s ">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+                        <dt><button class="font-1-m-b c11" aria-controls="pergunta1" aria-expanded="true">Qual forma de pagamento vocês aceitam?</button></dt>
+                        <dd id="pergunta1" class="c9 font-2-s ativa">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
                     </div>
                     <div class="perguntas-item">
-                        <dt class="font-1-m-b c11">Como posso entrar em contato?</dt>
-                        <dd class="c9 font-2-s ">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+                        <dt><button class="font-1-m-b c11" aria-controls="pergunta2" aria-expanded="false">Como posso entrar em contato?</button></dt>
+                        <dd id="pergunta2" class="c9 font-2-s ">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
                     </div>
                     <div class="perguntas-item">
-                        <dt class="font-1-m-b c11">Vocês possuem algum desconto?</dt>
-                        <dd class="c9 font-2-s ">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+                        <dt><button class="font-1-m-b c11" aria-controls="pergunta3" aria-expanded="false">Vocês possuem algum desconto?</button></dt>
+                        <dd id="pergunta3" class="c9 font-2-s ">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
                     </div>
                     <div class="perguntas-item">
-                        <dt class="font-1-m-b c11">Qual a garantia que possuo?</dt>
-                        <dd class="c9 font-2-s ">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+                        <dt><button class="font-1-m-b c11" aria-controls="pergunta4" aria-expanded="false">Qual a garantia que possuo?</button></dt>
+                        <dd id="pergunta4" class="c9 font-2-s ">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
                     </div>
                     <div class="perguntas-item">
-                        <dt class="font-1-m-b c11">Posso parcelar no boleto?</dt>
-                        <dd class="c9 font-2-s ">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+                        <dt>
+                            <button class="font-1-m-b c11" aria-controls="pergunta5" aria-expanded="false">Posso parcelar no boleto?</button>
+                        </dt>
+                        <dd id="pergunta5" class="c9 font-2-s ">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
                     </div>
                     <div class="perguntas-item">
-                        <dt class="font-1-m-b c11">Quantas trocas posso fazer ao ano?</dt>
-                        <dd class="c9 font-2-s ">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+                        <dt class="font-1-m-b c11"><button  class="font-1-m-b c11" aria-controls="pergunta6" aria-expanded="false">Quantas trocas posso fazer ao ano?</button></dt>
+                        <dd id="pergunta6"class="c9 font-2-s ">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
                     </div>
                 </dl>
     </article>
@@ -176,6 +179,7 @@
             <p class="footer-copy c6 font-2-s">Bikcraft © Alguns direitos reservados.</p>
             </div>
     </footer>
+    <script src="./js/plugin/simple-anime.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>

@@ -3,6 +3,7 @@
 @import "utilidades/tipografia.css";
 @import "utilidades/cores.css";
 @import "utilidades/formulario.css";
+@import "utilidades/animacao.css";
 
 /* home */
 @import "home/introducao.css";
